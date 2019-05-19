@@ -1,8 +1,6 @@
 # A simple deep impainting algorithm based on generative adversarial networks (GANs)
 
-### Tech
-
-Requirements
+### Requirements
 
 * A dataset (we used the Paris StreetView dataset, however, it can not be made publicly available)
 * Python 3.6+

@@ -77,9 +77,9 @@ for iteration in range(n_iter):
     
     # Saves the outputs
     image_names = test_data.get_batch_image_names(iteration + 1, batch_size)
-    triple_images = np.concatenate((fake_remounted_gt_data, remounted_gt_data, corrupted_data), axis = 3)
+    triple_images = np.concatenate((fake_remounted_gt_data, remounted_gt_data, remounted_corrupted_data), axis = 2)
     utils.save_numpy_batch(triple_images, save_path, image_names)
-    utils.save_numpy_batch(fake_remounted_gt_data, save_path, image_names)
+    #utils.save_numpy_batch(fake_remounted_gt_data, save_path, image_names)
     
     
 mean_g_loss = running_g_loss/test_data.n_images
